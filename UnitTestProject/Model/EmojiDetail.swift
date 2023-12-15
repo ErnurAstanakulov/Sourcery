@@ -8,7 +8,7 @@
 import Foundation
 
 // AutoEquatable
-struct EmojiModel: Identifiable, AutoHashable {
+struct EmojiModel: Identifiable, AutoDictionary {
     let id: Int
     var isFaceUp: Bool
     let name: String
@@ -20,7 +20,7 @@ struct EmojiModel: Identifiable, AutoHashable {
     }
 }
 
-struct EmojiDetail {
+struct EmojiDetail: AutoDictionary {
     //AutoEquatable, AutoDictionary
 //    EmojiModel(id: 0, isFaceUp: true, name: "♠️", score: 0, detail: EmojiDetail(creteDate: Date().addingTimeInterval(1))),
 //    EmojiModel(id: 1, isFaceUp: true, name: "♥️", score: 0, detail: EmojiDetail(creteDate: Date().addingTimeInterval(11))),
@@ -33,6 +33,6 @@ struct EmojiDetail {
     }
 }
 
-protocol AutoHashable {
+protocol AutoDictionary {
     
 }

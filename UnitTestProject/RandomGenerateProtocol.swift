@@ -7,7 +7,8 @@
 
 import Foundation
 
-protocol RandomGenerateProtocol {
+protocol AutoMockable { }
+protocol RandomGenerateProtocol: AutoMockable {
     func getRandomIndex() -> Int
 }
 

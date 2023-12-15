@@ -1,8 +1,8 @@
 sources:
   - /Users/yernur/Documents/UnitTestProject/UnitTestProject
 templates:
-  - /Users/yernur/Documents/UnitTestProject/sourcery/Templates
+  - /Users/yernur/Documents/UnitTestProject/sourcery/CustomTemplates/AutoDictionary.stencil
 output:
- /Users/yernur/Documents/UnitTestProject/UnitTestProjectTests/Generated.swift
+ /Users/yernur/Documents/UnitTestProject/UnitTestProjectTests/Generated/AutoDictionarySourcery.swift
 args:
   autoMockableTestableImports: ["UnitTestProject"]

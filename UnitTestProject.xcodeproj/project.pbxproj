@@ -18,6 +18,9 @@
 		39CB27DC2B2C22B100BB399D /* BoxAnimatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB27DB2B2C22B100BB399D /* BoxAnimatableView.swift */; };
 		39CB27E12B2C320300BB399D /* UnitTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395905962B1B5857000D6C91 /* UnitTestProjectTests.swift */; };
 		39CECC8B2B2AF9170041C5BC /* RandomGenerateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CECC8A2B2AF9170041C5BC /* RandomGenerateProtocol.swift */; };
+		39DF463F2B2C602300D189F4 /* AutoHashableSourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF463E2B2C602300D189F4 /* AutoHashableSourcery.swift */; };
+		39DF46412B2C61CD00D189F4 /* AutoMockableSourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF46402B2C61CD00D189F4 /* AutoMockableSourcery.swift */; };
+		39DF46432B2C63D600D189F4 /* Dictionary.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DF46422B2C63D600D189F4 /* Dictionary.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		39CB27D92B2C224900BB399D /* EmojiDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDetail.swift; sourceTree = "<group>"; };
 		39CB27DB2B2C22B100BB399D /* BoxAnimatableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxAnimatableView.swift; sourceTree = "<group>"; };
 		39CECC8A2B2AF9170041C5BC /* RandomGenerateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerateProtocol.swift; sourceTree = "<group>"; };
+		39DF463E2B2C602300D189F4 /* AutoHashableSourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHashableSourcery.swift; sourceTree = "<group>"; };
+		39DF46402B2C61CD00D189F4 /* AutoMockableSourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockableSourcery.swift; sourceTree = "<group>"; };
+		39DF46422B2C63D600D189F4 /* Dictionary.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,9 @@
 		396E9E8B2B1C5C7E00BD8BC7 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				39DF46422B2C63D600D189F4 /* Dictionary.generated.swift */,
+				39DF46402B2C61CD00D189F4 /* AutoMockableSourcery.swift */,
+				39DF463E2B2C602300D189F4 /* AutoHashableSourcery.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 				3959057D2B1B5856000D6C91 /* Sources */,
 				3959057E2B1B5856000D6C91 /* Frameworks */,
 				3959057F2B1B5856000D6C91 /* Resources */,
+				39DF46442B2C647C00D189F4 /* Run Sourcery */,
 			);
 			buildRules = (
 			);
@@ -246,6 +256,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39DF46442B2C647C00D189F4 /* Run Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Sourcery";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nsourcery --config sourcery.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3959057D2B1B5856000D6C91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -266,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DF46432B2C63D600D189F4 /* Dictionary.generated.swift in Sources */,
+				39DF463F2B2C602300D189F4 /* AutoHashableSourcery.swift in Sources */,
 				39CB27E12B2C320300BB399D /* UnitTestProjectTests.swift in Sources */,
+				39DF46412B2C61CD00D189F4 /* AutoMockableSourcery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
