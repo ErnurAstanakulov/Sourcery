@@ -1,0 +1,16 @@
+{% for import in argument.autoMockableTestableImports %}
+@testable import {{ import }}
+{% endfor %}
+
+{% for type in types.implementing.AutoDictionary %}
+// MARK - {{ type.name }} toDictionary
+extension {{ type.name }} {
+  func toDictionary() -> [String: Any] {
+    var dict = [String: Any]()
+{% for var in type.variables %}
+    dict["{{ var.name }}"] = {{ var.name }}
+{% endfor %}
+    return dict
+  }
+}
+{% endfor %}

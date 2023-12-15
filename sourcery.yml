@@ -1,0 +1,8 @@
+sources:
+  - /Users/yernur/Documents/UnitTestProject/UnitTestProject
+templates:
+  - /Users/yernur/Documents/UnitTestProject/sourcery/Templates
+output:
+ /Users/yernur/Documents/UnitTestProject/UnitTestProjectTests/Generated.swift
+args:
+  autoMockableTestableImports: ["UnitTestProject"]
