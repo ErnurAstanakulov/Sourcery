@@ -159,7 +159,6 @@
 				3959057D2B1B5856000D6C91 /* Sources */,
 				3959057E2B1B5856000D6C91 /* Frameworks */,
 				3959057F2B1B5856000D6C91 /* Resources */,
-				39CB27DE2B2C285800BB399D /* Run Sourcery */,
 			);
 			buildRules = (
 			);
@@ -246,27 +245,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		39CB27DE2B2C285800BB399D /* Run Sourcery */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Sourcery";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nsourcery --config sourcery.yml\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3959057D2B1B5856000D6C91 /* Sources */ = {
